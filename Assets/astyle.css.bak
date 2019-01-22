@@ -1,0 +1,60 @@
+label{display: block; }
+* {
+margin: 40;
+padding: 40;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 2fr
+    grid-template-areas:
+    "title title"
+    "jeep_model"
+    "tranny"
+    "rubicon"
+    "tcase_engaged"
+    "tire_diameter"
+    ;
+}
+
+.title{
+    grid-area: .grid.title;
+    background-color: red;
+}
+
+.jeep_model{
+    grid-area: .grid.jeep_model;
+    background-color: lightblue;
+}
+
+.tranny{
+    grid-area: .grid.tranny;
+    background-color: green;
+}
+
+.rubicon{
+    grid-area: .grid.rubicon;
+    background-color: yellow;
+}
+
+.tcase_engaged{
+    grid-area: .grid.tcase_engaged;
+    background-color: gray;
+}
+
+.tire_diameter{
+    grid-area: .grid.tire_diameter;
+    background-color: violet;
+}
+/*
+.calc_gear_ratio_title{
+    grid-area: calc_gear_ratio_title;
+    background-color: lightblue;
+}*/
+
+.chart1mph {
+    grid-area: .grid.chart1mph;
+    display: grid;
+    background-color: lightgray;
+}
+/*.chart2rpm {grid-area: .grid.chart2rpm;}/* display: grid; background-color: lightred;}*/
